@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 60-30-10 Color Rule Implementation -->
+
+    <!-- Primary Colors (60% - Main backgrounds, neutral elements) -->
+    <color name="primary_white">#FFFFFF</color>
+    <color name="primary_light_gray">#F8F9FA</color>
+    <color name="primary_gray">#E9ECEF</color>
+    <color name="primary_dark">#2C3E50</color>
+
+    <!-- Secondary Colors (30% - Supporting elements, cards, containers) -->
+    <color name="secondary_green">#00C896</color>
+    <color name="secondary_green_dark">#00B085</color>
+    <color name="secondary_light_green">#E8F8F5</color>
+    <color name="secondary_orange">#FF6B5B</color>
+
+    <!-- Accent Colors (10% - Highlights, buttons, important elements) -->
+    <color name="accent_bright_green">#00D4AA</color>
+    <color name="accent_red">#FF5722</color>
+    <color name="accent_blue">#2196F3</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#2C3E50</color>
+    <color name="text_secondary">#7F8C8D</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_hint">#BDC3C7</color>
+
+    <!-- Status Colors -->
+    <color name="status_bar">#00B085</color>
+    <color name="navigation_bar">#FFFFFF</color>
+
+    <!-- Background Colors -->
+    <color name="background_main">#FFFFFF</color>
+    <color name="background_card">#F8F9FA</color>
+    <color name="background_overlay">#80000000</color>
+
+    <!-- Border Colors -->
+    <color name="border_light">#E9ECEF</color>
+    <color name="border_medium">#DEE2E6</color>
+
+    <!-- Button Colors -->
+    <color name="button_primary">#00C896</color>
+    <color name="button_primary_pressed">#00B085</color>
+    <color name="button_secondary">#FF6B5B</color>
+    <color name="button_disabled">#BDC3C7</color>
+
+    <!-- Common Colors -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+</resources>

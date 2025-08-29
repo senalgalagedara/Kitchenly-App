@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_main"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/ivFood1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/card_background"
+                    android:padding="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/p1"
+                    android:contentDescription="Food 1" />
+
+                <ImageView
+                    android:id="@+id/ivFood2"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/card_background"
+                    android:padding="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/p2"
+                    android:contentDescription="Food 2" />
+
+                <ImageView
+                    android:id="@+id/ivFood3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/card_background"
+                    android:padding="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/p3"
+                    android:contentDescription="Food 3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/ivFood4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@drawable/card_background"
+                    android:padding="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/p4"
+                    android:contentDescription="Food 4" />
+
+                <ImageView
+                    android:id="@+id/ivFood5"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:background="@drawable/card_background"
+                    android:padding="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/p5"
+                    android:contentDescription="Food 5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/ivFood6"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/card_background"
+                    android:padding="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/p6"
+                    android:contentDescription="Food 6" />
+
+                <ImageView
+                    android:id="@+id/ivFood7"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:background="@drawable/card_background"
+                    android:padding="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/p7"
+                    android:contentDescription="Food 7" />
+
+                <ImageView
+                    android:id="@+id/ivFood8"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/card_background"
+                    android:padding="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/p8"
+                    android:contentDescription="Food 8" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="40dp">
+
+            <TextView
+                android:id="@+id/tvStartCooking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Start Cooking"
+                android:textColor="@color/text_primary"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:gravity="center"
+                android:text="Let's join our community\nto cook better food!"
+                android:textColor="@color/text_secondary"
+                android:textSize="16sp"
+                android:lineSpacingMultiplier="1.4" />
+
+            <Button
+                android:id="@+id/btnGetStarted"
+                style="@style/PrimaryButton"
+                android:layout_marginTop="16dp"
+                android:text="Get Started" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

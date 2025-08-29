@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kitchenly</string>
+
+    <string name="welcome_to">Welcome\nto\nKitchenly</string>
+    <string name="next">Next</string>
+
+    <string name="start_cooking">Start Cooking</string>
+    <string name="lets_join_community">Let\'s join our community\nto cook better food!</string>
+    <string name="get_started">Get Started</string>
+
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="please_enter_account">Please enter your account here</string>
+    <string name="email_phone_hint">Email or phone number</string>
+    <string name="password_hint">Password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="login">Login</string>
+    <string name="or_continue_with">Or continue with</string>
+    <string name="google">Google</string>
+    <string name="dont_have_account">Don\'t have any account?</string>
+    <string name="sign_up">Sign Up</string>
+
+    <string name="search_hint">Search</string>
+    <string name="category">Category</string>
+    <string name="all">All</string>
+    <string name="food">Food</string>
+    <string name="drink">Drink</string>
+    <string name="pancake">Pancake</string>
+    <string name="salad">Salad</string>
+
+    <string name="home">Home</string>
+    <string name="upload">Upload</string>
+    <string name="notification">Notification</string>
+    <string name="profile">Profile</string>
+
+    <string name="recipes">Recipes</string>
+    <string name="liked">Liked</string>
+
+    <string name="new_notification">New</string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="follow">Follow</string>
+    <string name="followed">Followed</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
