@@ -33,6 +33,7 @@ class LoginActivity : AppCompatActivity() {
 
     private fun setupClickListeners() {
         btnLogin.setOnClickListener {
+            navigateToMain()
         }
 
         btnGoogleSignIn.setOnClickListener {
@@ -40,17 +41,11 @@ class LoginActivity : AppCompatActivity() {
         }
 
         tvForgotPassword.setOnClickListener {
-            handleForgotPassword()
         }
     }
 
     private fun handleGoogleSignIn() {
-        Toast.makeText(this, "Google Sign In clicked", Toast.LENGTH_SHORT).show()
         navigateToMain()
-    }
-
-    private fun handleForgotPassword() {
-        Toast.makeText(this, "Forgot Password clicked", Toast.LENGTH_SHORT).show()
     }
 
 

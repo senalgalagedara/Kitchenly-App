@@ -46,7 +46,6 @@
             android:layout_marginBottom="32dp">
 
             <EditText
-                android:paddingTop="15dp"
                 android:id="@+id/etEmail"
                 style="@style/InputField"
                 android:layout_marginBottom="16dp"
@@ -57,7 +56,6 @@
                 android:drawableTint="@color/text_hint" />
 
             <EditText
-                android:paddingTop="15dp"
                 android:id="@+id/etPassword"
                 style="@style/InputField"
                 android:layout_marginBottom="8dp"
@@ -97,11 +95,7 @@
             <Button
                 android:id="@+id/btnGoogleSignIn"
                 style="@style/SecondaryButton"
-                android:layout_marginBottom="32dp"
-                android:paddingLeft="130dp"
-                android:paddingTop="15dp"
-                android:text="Google"
-                android:drawableStart="@drawable/google" />
+                android:text="Google"/>
 
         </LinearLayout>
 

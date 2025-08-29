@@ -1,68 +1,52 @@
 package com.kitchenly.app
 
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var bottomNavigation: BottomNavigationView
-    private lateinit var fabAdd: FloatingActionButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        initViews()
         setupBottomNavigation()
-        setupFAB()
-        loadFragment(HomeFragment())
-    }
 
-    private fun initViews() {
-        bottomNavigation = findViewById(R.id.bottomNavigation)
-        fabAdd = findViewById(R.id.fabAdd)
+        if (savedInstanceState == null) {
+            loadFragment(HomeFragment())
+        }
     }
 
     private fun setupBottomNavigation() {
+        bottomNavigation = findViewById(R.id.bottom_navigation)
+
+        bottomNavigation.selectedItemId = R.id.nav_home
+
         bottomNavigation.setOnItemSelectedListener { item ->
             when (item.itemId) {
-                R.id.navigation_home -> {
+                R.id.nav_home -> {
                     loadFragment(HomeFragment())
                     true
                 }
-
-                R.id.navigation_add -> {
-                    false
-                }
-                R.id.navigation_notification -> {
+                R.id.nav_notification -> {
                     loadFragment(NotificationFragment())
                     true
                 }
-                R.id.navigation_profile -> {
+                R.id.nav_profile -> {
                     loadFragment(ProfileFragment())
                     true
                 }
                 else -> false
             }
         }
-
-        bottomNavigation.selectedItemId = R.id.navigation_home
-    }
-
-    private fun setupFAB() {
-        fabAdd.setOnClickListener {
-            Toast.makeText(this, "Add Recipe clicked", Toast.LENGTH_SHORT).show()
-        }
     }
 
     private fun loadFragment(fragment: Fragment) {
-        supportFragmentManager
-            .beginTransaction()
-            .replace(R.id.fragmentContainer, fragment)
-            .commit()
+        val transaction = supportFragmentManager.beginTransaction()
+        transaction.replace(R.id.fragment_container, fragment)
+        transaction.commit()
     }
 }
